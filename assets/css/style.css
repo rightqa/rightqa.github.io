@@ -418,6 +418,8 @@ h1.logo {
   margin-top: 15px;
   font-weight: 100;
 }
+.bullet li{
+list-style: outside;}
 /*////////////////////////////////////////////////////////////////////////
 //  About us
 ///////////////////////////////////////////////////////////////////////*/
@@ -571,7 +573,8 @@ h2.footer-block {
 }
 .form-control{
   border-radius: none !important;
-  padding: 20px 26px;
+  /*padding: 20px 26px;*/
+ 
 }
 .form-group .btn.btn-o-white {
     width: 100%;
@@ -626,7 +629,9 @@ h2.footer-block {
 .social {
   margin-left: 40px;
 }
-
+.social a{
+  color: #fff;
+}
 /*////////////////////////////////////////////////////////////////////////
 //  11 - Responsive styles
 ///////////////////////////////////////////////////////////////////////*/

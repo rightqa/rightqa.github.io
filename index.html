@@ -380,8 +380,9 @@
 							</div>
 							<div class="col-sm-6 blog-post">
 								<h2 class="footer-block">Leave us a message</h2>
-								<form class="" role="form" id="contact" onsubmit="your_ajax_function();">
-									<div class="form-group">
+								<!--<form class="" role="form" id="contact" onsubmit="your_ajax_function();">-->
+									<form class="" role="form" action="//formspree.io/hi.rightqa@gmail.com" method="POST">
+                  <div class="form-group">
 								    	<!--<input type="text" class="form-control form-control-white" placeholder="Your Name" required>-->
                       <input type="text" name="name" class="form-control form-control-white" placeholder="Your Name" required>
 								  	</div>
@@ -489,7 +490,7 @@
             alert("Submitted comment"); 
              //$("#commentList").append("Name:" + $("#name").val() + "<br/>comment:" + $("#body").val());
          },
-        error: function() {
+        error: function(response) {
              //$("#commentList").append($("#name").val() + "<br/>" + $("#body").val());
             alert("There was an error submitting comment");
         }
